@@ -23,8 +23,6 @@ jobs:
          unzip z3-4.15.4-x64-glibc-2.39.zip
          sudo cp z3-4.15.4-x64-glibc-2.39/bin/z3 /usr/local/bin/
          sudo cp z3-4.15.4-x64-glibc-2.39/bin/libz3.so /usr/local/lib/
-         sudo ldconfig
-         z3 --version
 
     - name: Get Z3 version
       run: z3 --version
