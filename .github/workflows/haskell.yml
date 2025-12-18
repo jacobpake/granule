@@ -21,6 +21,9 @@ jobs:
       run: >-
         sudo apt install
         z3
+        
+    - name: Get Z3 version
+      run: z3 --version
 
     # Use preinstalled Stack.  Should Stack fail to be installed, use the setup action:
     # - name: Setup Haskell
