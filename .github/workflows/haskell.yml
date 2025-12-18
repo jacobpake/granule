@@ -24,6 +24,9 @@ jobs:
         
     - name: Get Z3 version
       run: z3 --version
+      
+    - name: Check libc
+      run: ldd --version
 
     # Use preinstalled Stack.  Should Stack fail to be installed, use the setup action:
     # - name: Setup Haskell
