@@ -64,6 +64,26 @@ common granule-ghc-warnings
     -fno-warn-unticked-promoted-constructors
     -fno-warn-partial-type-signatures
 
+library
+  import: granule-default-lang
+  import: granule-dependencies
+  import: granule-ghc-warnings
+  other-modules:
+      Language.Granule.Doc
+      Paths_granule
+  autogen-modules:
+      Paths_granule
+  hs-source-dirs:
+      interpreter/src
+  build-depends:
+    , concurrent-extra
+    , extra
+    , gitrev
+    , granule:frontend
+    , granule:interpreter
+    , granule:runtime
+    , logict >=0.7.1.0
+    , optparse-applicative >=0.18.0.0
 -- Library Components
 --
 --
